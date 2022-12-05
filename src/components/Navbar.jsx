@@ -1,6 +1,6 @@
 import React from 'react'
 import CartWidget from './CartWidget';
-const NavBars = () => {
+const Navbar = () => {
     return (
         <div className='row'>
             <div className='col-md-6'>
@@ -36,4 +36,4 @@ const NavBars = () => {
 
     );
 }
-export default NavBars;
+export default Navbar;
