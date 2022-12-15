@@ -19,9 +19,8 @@ const ItemCount = ({quantity}) => {
     const onAdd = () => {
         if((stock > 0) && (counter <= stock)){
             setStock(stock - counter);
-            setCounter(stock - counter);
-            console.log("Agregaste: " + counter + " Productos al carrito");
-        }
+            setCounter(counter);
+        };
     }; 
 
 

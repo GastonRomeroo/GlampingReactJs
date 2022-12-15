@@ -1,27 +1,27 @@
 import React, { useEffect, useState } from "react";
-import ItemCount from "./ItemCount";
+import { useParams } from "react-router-dom";
 import ItemList from "./ItemList";
 import ArraydeProductos from "./json/ArrayDeProductos.json"
 
 const ItemListContainer = () => {
     const [items, setItems] = useState([]);
+    const {id} = useParams() 
 
     useEffect(() => {
         const promesa = new Promise((resolve) => {
             setTimeout(() => {
-                resolve(ArraydeProductos);
+                resolve(id ? ArraydeProductos.filter(item =>  item.cat === id) : ArraydeProductos);
             }, 2000);
         });
         promesa.then((data) => {
             setItems(data);
         })
-    }, [])
+    }, [id])
 
 
     return (
-        <div className="container py-5">
+        <div className="container py-3">
             <ItemList items={items} />
-            <ItemCount stock={items.stock} />
         </div>
     )
 };
