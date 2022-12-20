@@ -1,10 +1,14 @@
 import React from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 
-const ItemCount = ({quantity}) => {
+const ItemCount = ({stockItems}) => {
     const [counter, setCounter] = useState(1);
-    const [stock, setStock] = useState(quantity);
+    const [stock, setStock] = useState(stockItems);
 
+    useEffect(() => {
+        setStock(stockItems);
+    }, [stockItems])
 
     const increaseStock = () =>{
         if (counter < stock) {
@@ -22,7 +26,6 @@ const ItemCount = ({quantity}) => {
             setCounter(counter);
         };
     }; 
-
 
 
     return (

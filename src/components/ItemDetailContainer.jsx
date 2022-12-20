@@ -12,7 +12,7 @@ const ItemDetailContainer = () => {
         const promesa = new Promise((resolve) => {
             setTimeout(() => {
                 resolve(ArraydeProductos.find(item => item.id === parseInt(id)));
-            }, 2000)
+            }, 900)
         });
 
         promesa.then((data) => {
@@ -22,7 +22,6 @@ const ItemDetailContainer = () => {
     }, [id]);
     return (
         <div>
-            <h3>{item.nombre}</h3>
             <div className="container">
                 <ItemDetail item={item} />
             </div>
