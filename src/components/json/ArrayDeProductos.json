@@ -1,5 +1,5 @@
 [{
-"id" : 1,
+"index" : 1,
 "nombre" : "Carpa canadiese",
 "detalle1" :"Medidas: 2.40x2.00x1.80mts, Estructura: varillas caño zincado 3/4 + cumbrera ,Cuerpo: Tejido de algodón, poliester respirable Piso: Lona Cobertura 210 Cubretecho: Lona de algodon resinada e impermeabilizada doble puerta para mayor circulacion de aire ventana con mosquitero",
 "precio" : 97213.87,
@@ -11,7 +11,7 @@
 },
 
 {
-"id" : 2,
+"index" : 2,
 "nombre" : "Linterna Spinit",
 "detalle1" : "Linterna de mano/frontal HL800R MAX recargable multifunción, Multipropósito: Linterna de cabeza, de mano o de sujeción, magnética, Batería recargable USB: 1x 18650, Potencia Máxima Lumen: 800 LED CREE 10W Waterproof: IPX4 Modos: Alta - Media - Baja - Flash - OS, Medidas: 23x110mm, Peso: 65g, Rango Máximo: 300mts, Uso: Táctico - Trabajo - Camping - Deportes",
 "precio" : 6239.48,
@@ -22,7 +22,7 @@
 },
 
 {
-"id" : 3 ,
+"index" : 3 ,
 "nombre" :"Navaja Trento",
 "detalle1" :"Presentación en caja de cartón imantada, Largo de hoja: 85 mm, Largo total: 200 mm, Acero 420 C. Incluye funda",
 "precio" : 8650.15,
@@ -33,7 +33,7 @@
 },
 
 {
-"id" : 4,
+"index" : 4,
 "nombre" :"Mochila Bamboo",
 "detalle1" :"» Tela: Nylon Jacquard con Revestimiento PU » Respaldar regulable en altura con velcro súper reforzado. » 2 varillas de aluminio una vertical y una horizontal que refuerzan la mochila. » Ajuste frontal para su mayor comodidad » Bolsillo frontal y bolsillo superior para ropa y accesorios » Compartimento inferior para bolsa de dormir » Bolsillos laterales de malla » Ajuste para bastones de trekking y piqueta de hielo » Compatible con bolsa de Hidratación » Cubre mochila incorporado. » Medidas: 79 x 38 x 30 cm » Peso: 2,5 kg » Color: Negro con gris » Capacidad: 70 litros",
 "precio" : 66319.90,
@@ -44,7 +44,7 @@
 },
 
 {
-"id" : 5,
+"index" : 5,
 "nombre" :"Vaso Térmico",
 "detalle1" :"Vaso Térmico Waterdog AB-2035 » CAPACIDAD: 350 ml» VASO 100% ACERO INOXIDABLE 304 » Tapa PLÁSTICA» Fácil de llenar con bebidas frías extremas.» Ideal para agua fría y bebidas deportivas. » Medida: Alto: 15,6 cm / Diámetro Boca: 8 cm / Base: 6 cm» Peso: 231 g",
 "precio" : 6483.80,
@@ -55,7 +55,7 @@
 },
 
 {
-"id" : 6,
+"index" : 6,
 "nombre" :"Linterna Ledlenser",
 "detalle1" :"Linterna Ledlenser MT6 600 Lumens» Esta linterna de bolsillo es el compañero ideal para excursiones ocasionales de caza, pesca y acampada. Funciona con las tradicionales pilas o baterías AA. Lo especial: el indicador de carga te indica el estado actual y te avisa para cuando tengas que sacarla para darle de comer. Así podrás reaccionar a tiempo y simplemente colocar una pila nueva» DATOS TECNICOS» Configuración LED: 1 x Xtreme LED» Potencia lumínica: MÁX. 600 lm - MÍN. 10 lm» Haz de luz: MÁX. 260 m - MÍN. 30 m» Duración lumínica: MÁX. 192 h - MÍN. 8 h",
 "precio" : 26042.30,
@@ -66,7 +66,7 @@
 },
 
 {
-"id" : 7,
+"index" : 7,
 "nombre" :"Termo Bala",
 "detalle1" :"Termo Bala Lexus 1 lt.",
 "precio" : 6483.80,
@@ -76,7 +76,7 @@
 },
 
 {
-"id" : 8,
+"index" : 8,
 "nombre" :"Termo Contigo",
 "detalle1" :"Termo Contigo De Acero Inoxidable 1.1 Lts",
 "precio" : 12352.20,
@@ -86,7 +86,7 @@
 },
 
 {
-"id" : 9,
+"index" : 9,
 "nombre" :"Carpa Baño",
 "detalle1" :"Carpa Baño Waterdog Tenth Bath",
 "precio" : 12352.20,
@@ -96,7 +96,7 @@
 },
 
 {
-"id" : 10,
+"index" : 10,
 "nombre" :"Caña Seabay",
 "detalle1" :"Caña Seabay Tournament TRMSS 4262 S(Frontal) 4.26 Mts",
 "precio" : 67216.30,
