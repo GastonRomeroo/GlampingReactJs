@@ -14,7 +14,7 @@ const ItemDetail = ({ item }) => {
                         <p className="card-text">{item.detalle1}</p>
                         <p className="card-text">Stock disponible: {item.stock} unidad/es</p>
                         <p className="card-text">ARS ${item.precio}</p>
-                        <ItemCount stockItems={item.stock} />
+                        <ItemCount stockItems={item.stock} /> 
                     </div>
                 </div>
             </div>

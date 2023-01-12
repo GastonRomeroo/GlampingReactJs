@@ -10,7 +10,7 @@ const Error404 = () => {
                 <div className=" col-md-6 mt-5">
                     <p className="fs-3"> <span className="text-danger">Opps!</span> Page not found.</p>
                     <p className="lead">
-                        The page you’re looking for doesn’t exist.
+                        The page you re looking for doesnt exist.
                     </p>
                     <a to={"/Home"} className="btn btn-primary">Go Home</a>
                 </div>
