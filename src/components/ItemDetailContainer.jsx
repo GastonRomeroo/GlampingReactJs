@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
-import {collection, addDoc,doc, getDoc, getFirestore} from "firebase/firestore";
+import {doc, getDoc, getFirestore} from "firebase/firestore";
 
 //Herramientas de importacion que pueden ser utiles
 
@@ -13,23 +13,9 @@ import {collection, addDoc,doc, getDoc, getFirestore} from "firebase/firestore";
 const ItemDetailContainer = () => {
     const [item, setItem] = useState({});
     const {id} = useParams(); 
-    /* promesa de un JSON
-    useEffect(() => {
-
-        /*const promesa = new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(ArraydeProductos.find(item => item.id === parseInt(id)));
-            }, 900)
-        });
-            
-        promesa.then((data) => {
-            setItem(data);
-        });
-
-    }, [id]);*/
 
 
-    //INSERTO LOS PRODUCTOS DE JSON A FIRESTORE
+//INSERTO LOS PRODUCTOS DE JSON A FIRESTORE
    
 //    useEffect(() =>{
 //     const db = getFirestore();
@@ -50,7 +36,7 @@ const ItemDetailContainer = () => {
                 setItem({id: snapShot.id, ...snapShot.data()})
             }
         })
-    }, [])
+    },[])
     
 
 
