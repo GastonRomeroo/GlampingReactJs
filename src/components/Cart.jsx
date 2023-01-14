@@ -51,17 +51,16 @@ const Cart = () => {
                                     <td className="text-end align-middle"><Link onClick={() => { removeItem(item.id) }} title="Eliminar Producto"><img src={"images/icons/trash.svg"} alt={"Eliminar Producto"} width={24} /></Link></td>
                                 </tr>
                             ))}
-
                             <tr>
                                 <td>&nbsp;</td>
                                 <td className="text-end" colSpan={3}>Suma Total</td>
                                 <td className="text-center">ARS ${sumaTotal()}</td>
                                 <td>&nbsp;</td>
                             </tr>
-                        </tbody>
                         <tr>
                             <th scope="col" colSpan={5}><Link onClick={clear} className="btn btn-outline-danger" title="Vaciar Carrito">Vaciar Carrito</Link></th>
                         </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
