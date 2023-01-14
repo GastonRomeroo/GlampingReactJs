@@ -11,13 +11,13 @@ const Cart = () => {
         <div className="container py-">
             <div className="row">
                 <div className="col-md-">
-                    <table class="table">
+                    <table className="table">
                         <thead>
                             <tr>
                                 <th scope="col">&nbsp;</th>
                                 <th scope="col">Producto</th>
-                                <th scope="col">Cantidad</th>
-                                <th scope="col">Precio</th>
+                                <th scope="col" className="text-center">Cantidad</th>
+                                <th scope="col" className="text-center">Precio</th>
                                 <th scope="col">&nbsp;</th>
                             </tr>
                         </thead>
@@ -30,7 +30,7 @@ const Cart = () => {
                                 <td className="text-center align-middle">${item.quantity * item.precio}</td>
                                 <td className="text-end align-middle"><Link onClick={() => {removeItem(item.id)}} title="Eliminar Producto"><img src={"images/trash.svg"} alt={"Eliminar Producto"} width={24} /></Link></td>
                             </tr>
-                            ))};
+                            ))}
                         </tbody>
                     </table>
                 </div>
