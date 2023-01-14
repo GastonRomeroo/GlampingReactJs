@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import ItemCount from "./ItemCount";
-import { CartContext } from "./Contex/CartContext";
+import { CartContext } from "./Context/CartContext";
 const ItemDetail = ({ item }) => {
     const { addItem } = useContext(CartContext);
 

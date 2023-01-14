@@ -6,7 +6,7 @@ import Carrousel from './components/Carrousel';
 import Error404 from './components/Error404';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
-import CartContextProvider from './components/Contex/CartContext';
+import CartContextProvider from './components/Context/CartContext';
 import Cart from './components/Cart';
 import Footer from './components/Footer';
 
