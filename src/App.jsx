@@ -6,9 +6,9 @@ import Carrousel from './components/Carrousel';
 import Error404 from './components/Error404';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
-import Footer from './components/Footer';
-import CartContextProvider from './components/Contex/CartContext';
 import Cart from './components/Cart';
+import CartContextProvider from './components/Contex/CartContext';
+import Footer from './components/Footer';
 
 
 
