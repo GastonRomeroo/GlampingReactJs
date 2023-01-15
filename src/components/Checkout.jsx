@@ -2,7 +2,6 @@ import React, { useState, useContext } from "react";
 import { CartContext } from "./Context/CartContext";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { Navigate } from "react-router-dom";
-import Agradecimiento from "./Agradecimiento";
 
 
 
