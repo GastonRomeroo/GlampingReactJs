@@ -37,8 +37,7 @@ const ItemListContainer = () => {
 
     return (
         <div className="container py-3">
-            {loading ? <loading /> :
-                <ItemList items={items} />}
+            {loading ? <loading /> :<ItemList items={items}/>}
         </div>
     )
 };

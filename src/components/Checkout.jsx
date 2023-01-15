@@ -1,6 +1,8 @@
 import React, { useState, useContext } from "react";
 import { CartContext } from "./Context/CartContext";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
+import { Navigate } from "react-router-dom";
+import Agradecimiento from "./Agradecimiento";
 
 
 
@@ -73,10 +75,7 @@ const Checkout = () => {
             </div>
             <div className="row my-5">
                 <div className="col">
-                    {orderId ? <div className="alert alert-success" role="alert">
-                        <h4 className="alert-heading">Felicitaciones!</h4>
-                        <p>Tu numero de compra es: {orderId}</p>
-                    </div> : "" }
+                    {orderId ? <Navigate to={"/Agradecimiento/" + orderId} /> : ""}
                 </div>
             </div>
         </div>

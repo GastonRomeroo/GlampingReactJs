@@ -12,6 +12,7 @@ import {doc, getDoc, getFirestore} from "firebase/firestore";
 
 const ItemDetailContainer = () => {
     const [item, setItem] = useState({});
+    const [loading, setLoading] = useState(true)
     const {id} = useParams(); 
 
 
@@ -33,7 +34,10 @@ const ItemDetailContainer = () => {
         const documento = doc(db, "items", id);
         getDoc(documento).then((snapShot) => {
             if(snapShot.exists()){
-                setItem({id: snapShot.id, ...snapShot.data()})
+                setItem({id: snapShot.id, ...snapShot.data()});
+                setLoading(false);
+            }else{
+                console.log("ERROR");
             }
         })
     },[])
@@ -43,7 +47,7 @@ const ItemDetailContainer = () => {
     return (
         <div>
             <div className="container">
-                <ItemDetail item={item} />
+            {loading ? <loading /> :<ItemDetail item={item}/>}
             </div>
         </div>
     )
