@@ -25,11 +25,11 @@ const Cart = () => {
 
 
     return (
-        <div className="container py-5">
+        <div className="container py-5 text-center">
             <div className="row">
-                <div className="col-md-">
+                <div className="table-responsive col-md-12">
                     <table className="table">
-                        <thead>
+                        <thead className="table-light">
                             <tr>
                                 <th scope="col">&nbsp;</th>
                                 <th scope="col">Producto</th>
@@ -38,9 +38,8 @@ const Cart = () => {
                                 <th scope="col" className="text-center">Precio</th>
                                 <th scope="col">&nbsp;</th>
                             </tr>
-
                         </thead>
-                        <tbody>
+                        <tbody className="table-group-divider text-center">
                             {cart.map(item => (
                                 <tr key={item.id}>
                                     <td><img src={item.img} alt={item.nombre} width={64} title={item.nombre} /></td>
@@ -58,8 +57,12 @@ const Cart = () => {
                                 <td>&nbsp;</td>
                             </tr>
                         <tr>
-                            <th scope="col" colSpan={5}><Link onClick={clear} className="btn btn-outline-danger" title="Vaciar Carrito">Vaciar Carrito</Link></th>
+                            <th scope="col" colSpan={1}><Link onClick={clear} className="btn btn-outline-danger" title="Vaciar Carrito">Vaciar Carrito</Link></th>
+                            <th scope="col" colSpan={6}><Link to={"/Checkout"} className="btn btn-outline-success" title="Finalizar Comrpra">Finalizar Comrpra</Link></th>
                         </tr>
+
+
+
                         </tbody>
                     </table>
                 </div>

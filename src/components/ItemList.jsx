@@ -4,7 +4,7 @@ import Item from "./Item";
 
 const ItemList = ({items}) => {
     return(
-        <div className="row mx-auto">
+        <div className="row mx-auto text-center">
             <h5>Nuestros Productos</h5>
             {
                 items.map(item =>
