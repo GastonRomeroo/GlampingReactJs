@@ -26,9 +26,6 @@ const Checkout = () => {
         const ordersCollection = collection(db, "orders");
         addDoc(ordersCollection, order).then((snapShot) => {
             setOrderId(snapShot.id);
-            setNombre("");
-            setEmail("");
-            setTelefono("")
             clear();
         });
     }
@@ -78,7 +75,7 @@ const Checkout = () => {
                 <div className="col">
                     {orderId ? <div className="alert alert-success" role="alert">
                         <h4 className="alert-heading">Felicitaciones!</h4>
-                        <p>Tu numero de orden es: {orderId}</p>
+                        <p>Tu numero de compra es: {orderId}</p>
                     </div> : "" }
                 </div>
             </div>
