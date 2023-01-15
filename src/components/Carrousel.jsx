@@ -25,7 +25,6 @@ const Carrousel = () => {
             </div>
         </div>
     );
-
 };
 
 export default Carrousel;

@@ -15,7 +15,7 @@ const Cart = () => {
                             No se escontraron productos en el carrito.
                         </div>
                         <div>
-                        <Link className="btn btn-outline-primary" to={"/"}>Volver a la pagina principal</Link>
+                            <Link className="btn btn-outline-primary" to={"/"}>Volver a la pagina principal</Link>
                         </div>
                     </div>
                 </div>
@@ -56,10 +56,10 @@ const Cart = () => {
                                 <td className="text-center">ARS ${sumaTotal()}</td>
                                 <td>&nbsp;</td>
                             </tr>
-                        <tr>
-                            <th scope="col" colSpan={1}><Link onClick={clear} className="btn btn-outline-danger" title="Vaciar Carrito">Vaciar Carrito</Link></th>
-                            <th scope="col" colSpan={6}><Link to={"/Checkout"} className="btn btn-outline-success" title="Finalizar Comrpra">Finalizar Comrpra</Link></th>
-                        </tr>
+                            <tr>
+                                <th scope="col" colSpan={1}><Link onClick={clear} className="btn btn-outline-danger" title="Vaciar Carrito">Vaciar Carrito</Link></th>
+                                <th scope="col" colSpan={6}><Link to={"/Checkout"} className="btn btn-outline-success" title="Finalizar Comrpra">Finalizar Comrpra</Link></th>
+                            </tr>
 
 
 

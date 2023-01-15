@@ -6,40 +6,39 @@ import ItemList from "./ItemList";
 
 const ItemListContainer = () => {
     const [items, setItems] = useState([]);
-    const {id} = useParams() 
+    const [loading, setLoading] = useState(true)
+    const { id } = useParams()
 
 
 
-//INSERTO LOS PRODUCTOS DE JSON A FIRESTORE
-   /*
-   useEffect(() =>{
-    const db = getFirestore();
-    const itemsCollection = collection(db, "items")
-    ArraydeProductos.forEach((item) => {
-        addDoc(itemsCollection, item);
-    })
+    //INSERTO LOS PRODUCTOS DE JSON A FIRESTORE
+    /*
+    useEffect(() =>{
+     const db = getFirestore();
+     const itemsCollection = collection(db, "items")
+     ArraydeProductos.forEach((item) => {
+         addDoc(itemsCollection, item);
+     })
+ 
+    }, [])
+    */
+    //CONSULTAR COLLECTION DE MIS PRODUCTOS
 
-   }, [])
-   */
-//CONSULTAR COLLECTION DE MIS PRODUCTOS
-
-   useEffect(() => {
-    const db = getFirestore();
-    const itemsCollection = collection(db,"items");
-    const q = id ? query(itemsCollection, where("cat", "==", id)) : itemsCollection;
-
-
-    getDocs(q).then((snapShot) =>{
-        setItems(snapShot.docs.map((doc) => 
-        ({id: doc.id, ...doc.data()})
-        ))
-    });
-   },[])
+    useEffect(() => {
+        const db = getFirestore();
+        const itemsCollection = collection(db, "items");
+        const q = id ? query(itemsCollection, where("categoria", "==", id)) : itemsCollection;
+        getDocs(q).then((snapShot) => {
+            setItems(snapShot.docs.map((doc) => ({id:doc.id, ...doc.data()})));
+            setLoading(false);
+        });
+    }, [id]);
 
 
     return (
         <div className="container py-3">
-            <ItemList items={items} />
+            {loading ? <loading /> :
+                <ItemList items={items} />}
         </div>
     )
 };
