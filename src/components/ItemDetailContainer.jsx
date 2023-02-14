@@ -40,7 +40,7 @@ const ItemDetailContainer = () => {
                 console.log("ERROR");
             }
         })
-    },[])
+    },[id])
     
 
 
